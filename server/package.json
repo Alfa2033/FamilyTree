@@ -1,0 +1,22 @@
+{
+  "name": "arbol",
+  "version": "1.0.0",
+  "description": "Arbol binario para mostrar un arbol genealogico",
+  "main": "index.js",
+  "scripts": {
+    "start": "set ENVIRONMENT=development&& node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arbol",
+    "nodos"
+  ],
+  "author": "Alejandro Miguel Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^10.0.0"
+  }
+}

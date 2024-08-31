@@ -1,0 +1,85 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span, h2 {
+    color: azure;
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 120px;
+}
+
+button:hover {
+    background: darkgray;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.character {
+    padding: 10px;
+    box-shadow: 0px 8px 6px -5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#treevisualizer {
+    padding: 10px;
+    background: azure;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+#listpersons {
+    background: azure;
+    height: 500px;
+    width: 120px;
+    overflow-y: auto;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+}
+
+#inputspersons {
+    display: flex;
+}
+
+#inputspersons div {
+    margin-bottom: 5px;
+}
+
+#div_response {
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    background: azure;
+    height: 50px;
+    border-radius: 10px;
+}
