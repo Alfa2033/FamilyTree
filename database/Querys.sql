@@ -25,6 +25,26 @@ CREATE TABLE ListChildrens (
 	TreeId UNIQUEIDENTIFIER NOT NULL
 )
 
+ALTER TABLE Persons
+ADD CONSTRAINT FK_Tree
+FOREIGN KEY (TreeId)
+REFERENCES Trees(TreeId)
+
+ALTER TABLE Persons
+ADD CONSTRAINT FK_ListChildrens
+FOREIGN KEY (ListChildrenId)
+REFERENCES ListChildrens(ListChildrenId)
+
+ALTER TABLE Childrens
+ADD CONSTRAINT FK_Person
+FOREIGN KEY (PersonId)
+REFERENCES Persons(PersonId)
+
+ALTER TABLE Childrens
+ADD CONSTRAINT FK_ListChildrens_Childrens
+FOREIGN KEY (ListChildrenId)
+REFERENCES ListChildrens(ListChildrenId)
+
 SELECT * FROM Trees
 SELECT * FROM Persons
 SELECT * FROM Childrens
