@@ -29,13 +29,3 @@ SELECT * FROM Trees
 SELECT * FROM Persons
 SELECT * FROM Childrens
 SELECT * FROM ListChildrens
-
-truncate table Trees
-truncate table Persons
-truncate table Childrens
-truncate table ListChildrens
-
-drop table Trees
-drop table Persons
-drop table Childrens
-drop table ListChildrens

@@ -4,7 +4,7 @@
 -- Description: Agrega un hijo a una persona
 -- =============================================
 
-ALTER PROCEDURE ADD_CHILD
+CREATE PROCEDURE ADD_CHILD
 (
 	@_ParentId_1 UNIQUEIDENTIFIER,
 	@_ChildId UNIQUEIDENTIFIER,
@@ -57,7 +57,7 @@ BEGIN
 	BEGIN
 		SET @_ListChildrenParent_2 = NEWID()
 		EXEC CREATE_LIST_CHILD 
-			@_ListChildrenId = @_ListChildrenParent_1,
+			@_ListChildrenId = @_ListChildrenParent_2,
 			@_TreeId = @_TreeId
 
 		UPDATE
