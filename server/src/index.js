@@ -11,4 +11,4 @@ app.use(express.json({ limit: '10mb' }))
 app.use(express.urlencoded({ extended: true }))
 
 app.use(routes)
-server.StartServer(SERVER_PORT)
+server.StartServer(SERVER_PORT || 3001)

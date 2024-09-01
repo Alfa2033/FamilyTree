@@ -1,11 +1,11 @@
-const { Response, uuid, ServerConstants } = require('../../dependencies/Dependencies')
+const { Response, ServerConstants } = require('../../dependencies/Dependencies')
 
 class Person {
-    constructor(Name) {
+    constructor(Name, Id) {
+        this.Id = Id;
         this.Name = Name;
         this.Children = [];
         this.Partner = null;
-        this.Id = uuid.v4();
         this.ParentsComplete = false;
     }
 

@@ -1,8 +1,7 @@
-const { uuid } = require('../../dependencies/Dependencies')
 
 class Tree {
-    constructor() {
-        this.Id = uuid.v4();
+    constructor(Id) {
+        this.Id = Id
         this.Persons = [];
     }
 }
